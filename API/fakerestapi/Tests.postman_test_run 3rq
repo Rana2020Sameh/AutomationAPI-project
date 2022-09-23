@@ -1,0 +1,49 @@
+{
+	"id": "8a6a0438-4f87-4bfe-857e-9f6a1e704a6a",
+	"name": "Tests",
+	"timestamp": "2022-09-16T04:48:08.002Z",
+	"collection_id": "18654010-464e3195-db99-41c7-9284-cc944fdaf4bf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 1,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "80879507-209e-4fa5-a4e1-95ffa13a7a90",
+			"name": "Authors books",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/5",
+			"time": 80,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that all respons contain the Book id that was inserted": true
+			},
+			"testPassFailCounts": {
+				"Verify that all respons contain the Book id that was inserted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				80
+			],
+			"allTests": [
+				{
+					"Verify that all respons contain the Book id that was inserted": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 80,
+	"collection": {
+		"requests": [
+			{
+				"id": "80879507-209e-4fa5-a4e1-95ffa13a7a90",
+				"method": "GET"
+			}
+		]
+	}
+}

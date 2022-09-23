@@ -1,0 +1,49 @@
+{
+	"id": "c6869e10-8be2-4e1b-a2ef-a5e0f270df33",
+	"name": "Tests",
+	"timestamp": "2022-09-16T04:48:34.448Z",
+	"collection_id": "18654010-464e3195-db99-41c7-9284-cc944fdaf4bf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 1,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "41ac54d3-ca62-4eb6-b1b1-561dbf95228d",
+			"name": "put Authors",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/0",
+			"time": 98,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that Author updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Verify that Author updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Verify that Author updated successfully": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 98,
+	"collection": {
+		"requests": [
+			{
+				"id": "41ac54d3-ca62-4eb6-b1b1-561dbf95228d",
+				"method": "PUT"
+			}
+		]
+	}
+}

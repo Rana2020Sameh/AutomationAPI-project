@@ -1,0 +1,49 @@
+{
+	"id": "55372044-ea5d-47ac-b2c0-1838f496353b",
+	"name": "Trello API Testing",
+	"timestamp": "2022-09-16T05:00:25.870Z",
+	"collection_id": "18654010-52491a6f-dae2-4f7b-b562-d3d6e88f3c01",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 1,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+			"name": "get open boards",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 271,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"": true
+			},
+			"testPassFailCounts": {
+				"": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				271
+			],
+			"allTests": [
+				{
+					"": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 271,
+	"collection": {
+		"requests": [
+			{
+				"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+				"method": "GET"
+			}
+		]
+	}
+}

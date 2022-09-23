@@ -1,0 +1,49 @@
+{
+	"id": "d93f0b37-da15-4406-a048-b06cca72bfe2",
+	"name": "Trello API Testing",
+	"timestamp": "2022-09-16T04:58:24.748Z",
+	"collection_id": "18654010-52491a6f-dae2-4f7b-b562-d3d6e88f3c01",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 1,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+			"name": "create board",
+			"url": "https://api.trello.com/1/boards/?name=frist%20Test&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 801,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"verify the most important parameters ": true
+			},
+			"testPassFailCounts": {
+				"verify the most important parameters ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				801
+			],
+			"allTests": [
+				{
+					"verify the most important parameters ": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 801,
+	"collection": {
+		"requests": [
+			{
+				"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+				"method": "POST"
+			}
+		]
+	}
+}

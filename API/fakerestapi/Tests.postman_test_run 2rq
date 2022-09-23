@@ -1,0 +1,55 @@
+{
+	"id": "01ff6ddd-e9ef-4c6e-96ab-71dde8eef175",
+	"name": "Tests",
+	"timestamp": "2022-09-16T04:47:07.098Z",
+	"collection_id": "18654010-464e3195-db99-41c7-9284-cc944fdaf4bf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3bccc622-b25d-4633-9bfb-5bf25bf9ccc2",
+			"name": "Create Authors",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 93,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code for register users is 201": true,
+				"check if firstName and last name found": true
+			},
+			"testPassFailCounts": {
+				"Status code for register users is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check if firstName and last name found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				93
+			],
+			"allTests": [
+				{
+					"Status code for register users is 201": true,
+					"check if firstName and last name found": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 93,
+	"collection": {
+		"requests": [
+			{
+				"id": "3bccc622-b25d-4633-9bfb-5bf25bf9ccc2",
+				"method": "POST"
+			}
+		]
+	}
+}

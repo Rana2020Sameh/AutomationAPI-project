@@ -1,0 +1,55 @@
+{
+	"id": "0ce8a096-322f-4372-b914-ec9dd373a252",
+	"name": "Trello API Testing",
+	"timestamp": "2022-09-16T05:01:52.743Z",
+	"collection_id": "18654010-52491a6f-dae2-4f7b-b562-d3d6e88f3c01",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "21b50273-dbcb-429a-b8ec-d01cb4371183",
+			"name": "Delete a Board",
+			"url": "https://api.trello.com/1/boards/63209b2f0c8195047b3ddb19?key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 632,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validate Respose body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Respose body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				632
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validate Respose body": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 632,
+	"collection": {
+		"requests": [
+			{
+				"id": "21b50273-dbcb-429a-b8ec-d01cb4371183",
+				"method": "DELETE"
+			}
+		]
+	}
+}

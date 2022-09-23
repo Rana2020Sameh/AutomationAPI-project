@@ -1,0 +1,108 @@
+{
+	"id": "b913a84c-f7c1-43fb-9df8-2b35105c0601",
+	"name": "Trello API Testing",
+	"timestamp": "2022-09-08T14:23:00.454Z",
+	"collection_id": "18654010-52491a6f-dae2-4f7b-b562-d3d6e88f3c01",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "be7ba1e9-2de2-470e-876a-8aeeaf1c27bd",
+			"name": "Authorization",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 318,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				318
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+			"name": "create board",
+			"url": "https://api.trello.com/1/boards/?name=frist%20Test&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 465,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"verify the most important parameters ": true
+			},
+			"testPassFailCounts": {
+				"verify the most important parameters ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				465
+			],
+			"allTests": [
+				{
+					"verify the most important parameters ": true
+				}
+			]
+		},
+		{
+			"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+			"name": "get open boards",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 275,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"The number of Ids": false,
+				"validate the lastid board to check the number of all boards": true
+			},
+			"testPassFailCounts": {
+				"The number of Ids": {
+					"pass": 0,
+					"fail": 1
+				},
+				"validate the lastid board to check the number of all boards": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"The number of Ids": false,
+					"validate the lastid board to check the number of all boards": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1058,
+	"collection": {
+		"requests": [
+			{
+				"id": "be7ba1e9-2de2-470e-876a-8aeeaf1c27bd",
+				"method": "GET"
+			},
+			{
+				"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+				"method": "POST"
+			},
+			{
+				"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+				"method": "GET"
+			}
+		]
+	}
+}

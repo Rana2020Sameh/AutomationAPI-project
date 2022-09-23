@@ -1,0 +1,65 @@
+ API: GET /api/v1/Authors
+ Test Case: response should be 200 OK
+ Expected Result: 200 OK
+ Actual Result: 200 OK
+ Status: Pass
+
+
+ API: GET /api/v1/Authors
+ Test Case: Objects inside response contain, id, idBook, firstName, lastName.
+ Expected Result: response contain, id, idBook, firstName, lastName
+ Actual Result: response contain, id, idBook, firstName, lastName
+ Status: Pass
+
+-------------------------------------------------------------------------------------------------
+
+API: POST /api/v1/Authors
+Test Case: Register a new valid Author successfully and response code "201 Created"
+ Expected Result: response code "201 Created
+ Actual Result: response code "201 Created"
+ Status: fail
+
+API: POST /api/v1/Authors
+Test Case: firstname & lastname should be mandatory
+ Expected Result: firstname & lastname should be mandatory
+ Actual Result: firstname & lastname should be mandatory
+ Status: pass
+-------------------------------------------------------------------------------------------------
+
+API: GET /api/v1/Authors/authors/books/{idBook}
+
+Test Case:Searching with valid idBook should return relative data in response body.
+ Expected Result: idbook retrive in response body
+ Actual Result: idbook retrive in response body
+ Status: pass
+-------------------------------------------------------------------------------------------------
+
+API : PUT /api/v1/Authors/{id}
+Test Case: Author's data is updated successfully.
+ Expected Result:Author's data is updated successfully.
+ Actual Result: Author's data is updated successfully.
+
+ Status: pass
+
+
+-------------------------------------------------------------------------------------------------
+
+API:GET /api/v1/Authors/{id}
+
+Test Case:The author's data is changed in GET request
+
+ Expected Result:The author's data is changed in GET request
+ Actual Result: we get 404 user not found
+
+ Status: fail
+
+-------------------------------------------------------------------------------------------------
+
+API:Delete /api/v1/Authors/{id}
+
+Test Case:Verify that respose code is 200
+ Expected Result:respose code is 200
+ Actual Result: respose code is 200
+ Status: pass
+
+

@@ -1,0 +1,216 @@
+{
+	"id": "5fd1e2cd-4736-4dfb-b3d2-e924d8099843",
+	"name": "Tests",
+	"timestamp": "2022-09-01T14:02:50.460Z",
+	"collection_id": "18654010-464e3195-db99-41c7-9284-cc944fdaf4bf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "6c469dd9-f699-47cf-8677-854041a92fd0",
+			"name": "getAuthors",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 253,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"response contain, id, idBook, firstName, lastName": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response contain, id, idBook, firstName, lastName": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				253
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"response contain, id, idBook, firstName, lastName": true
+				}
+			]
+		},
+		{
+			"id": "3bccc622-b25d-4633-9bfb-5bf25bf9ccc2",
+			"name": "Create Authors",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 99,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code for register users is 201": true,
+				"check if firstName and last name found": true
+			},
+			"testPassFailCounts": {
+				"Status code for register users is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check if firstName and last name found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				99
+			],
+			"allTests": [
+				{
+					"Status code for register users is 201": true,
+					"check if firstName and last name found": true
+				}
+			]
+		},
+		{
+			"id": "80879507-209e-4fa5-a4e1-95ffa13a7a90",
+			"name": "Authors books",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/5",
+			"time": 115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that all respons contain the Book id that was inserted": true
+			},
+			"testPassFailCounts": {
+				"Verify that all respons contain the Book id that was inserted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Verify that all respons contain the Book id that was inserted": true
+				}
+			]
+		},
+		{
+			"id": "41ac54d3-ca62-4eb6-b1b1-561dbf95228d",
+			"name": "put Authors",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/0",
+			"time": 115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that Author updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Verify that Author updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Verify that Author updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "2a8cbfd1-5a9a-4358-bcc4-9891be7f1dea",
+			"name": "Get Authors",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/0",
+			"time": 105,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Verify that the put data updated here": false
+			},
+			"testPassFailCounts": {
+				"Verify that the put data updated here": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				105
+			],
+			"allTests": [
+				{
+					"Verify that the put data updated here": false
+				}
+			]
+		},
+		{
+			"id": "c67135d9-016a-4b54-a4b4-d63db736d721",
+			"name": "Delete Author",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/0",
+			"time": 110,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				110
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 797,
+	"collection": {
+		"requests": [
+			{
+				"id": "6c469dd9-f699-47cf-8677-854041a92fd0",
+				"method": "GET"
+			},
+			{
+				"id": "3bccc622-b25d-4633-9bfb-5bf25bf9ccc2",
+				"method": "POST"
+			},
+			{
+				"id": "80879507-209e-4fa5-a4e1-95ffa13a7a90",
+				"method": "GET"
+			},
+			{
+				"id": "41ac54d3-ca62-4eb6-b1b1-561dbf95228d",
+				"method": "PUT"
+			},
+			{
+				"id": "2a8cbfd1-5a9a-4358-bcc4-9891be7f1dea",
+				"method": "GET"
+			},
+			{
+				"id": "c67135d9-016a-4b54-a4b4-d63db736d721",
+				"method": "DELETE"
+			}
+		]
+	}
+}

@@ -1,0 +1,228 @@
+{
+	"id": "dc4ca036-1553-4194-8fcc-4ca7d9ae02fa",
+	"name": "Trello API Testing",
+	"timestamp": "2022-09-09T20:01:26.847Z",
+	"collection_id": "18654010-52491a6f-dae2-4f7b-b562-d3d6e88f3c01",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+			"name": "create board",
+			"url": "https://api.trello.com/1/boards/?name=frist%20Test&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 239,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"verify the most important parameters ": false
+			},
+			"testPassFailCounts": {
+				"verify the most important parameters ": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"verify the most important parameters ": false
+				}
+			]
+		},
+		{
+			"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+			"name": "get open boards",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 253,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"": true
+			},
+			"testPassFailCounts": {
+				"": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				253
+			],
+			"allTests": [
+				{
+					"": true
+				}
+			]
+		},
+		{
+			"id": "21b50273-dbcb-429a-b8ec-d01cb4371183",
+			"name": "Delete a Board",
+			"url": "https://api.trello.com/1/boards/631a0a652010920172386eeb?key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 608,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validate Respose body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Respose body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				608
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validate Respose body": true
+				}
+			]
+		},
+		{
+			"id": "e04d7c24-7ebb-48b7-83a8-40567968d509",
+			"name": "create list",
+			"url": "https://api.trello.com/1/lists?name=frist%20Test&idBoard=5abbe4b7ddc1b351ef961414&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 296,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate Response Keys": true,
+				"Verify the most important parameters and confirm their default values": true
+			},
+			"testPassFailCounts": {
+				"Validate Response Keys": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the most important parameters and confirm their default values": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				296
+			],
+			"allTests": [
+				{
+					"Validate Response Keys": true,
+					"Verify the most important parameters and confirm their default values": true
+				}
+			]
+		},
+		{
+			"id": "4acbe6e2-a379-4dec-a4c6-b4bcb5091f25",
+			"name": "get List",
+			"url": "https://api.trello.com/1/lists/631b0a40a2c3c401262b92d0?key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 225,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"verify the number of lists in the response": true
+			},
+			"testPassFailCounts": {
+				"verify the number of lists in the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				225
+			],
+			"allTests": [
+				{
+					"verify the number of lists in the response": true
+				}
+			]
+		},
+		{
+			"id": "64afcd4a-d390-4a86-98cd-7aba39b7a58c",
+			"name": "Archive or un-archive a list",
+			"url": "https://api.trello.com/1/lists/631b0a40a2c3c401262b92d0/closed?key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df&value=true",
+			"time": 241,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"verify the closed value": true,
+				"Validate Response Headers ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify the closed value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Response Headers ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				241
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"verify the closed value": true,
+					"Validate Response Headers ": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1862,
+	"collection": {
+		"requests": [
+			{
+				"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+				"method": "POST"
+			},
+			{
+				"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+				"method": "GET"
+			},
+			{
+				"id": "21b50273-dbcb-429a-b8ec-d01cb4371183",
+				"method": "DELETE"
+			},
+			{
+				"id": "e04d7c24-7ebb-48b7-83a8-40567968d509",
+				"method": "POST"
+			},
+			{
+				"id": "4acbe6e2-a379-4dec-a4c6-b4bcb5091f25",
+				"method": "GET"
+			},
+			{
+				"id": "64afcd4a-d390-4a86-98cd-7aba39b7a58c",
+				"method": "PUT"
+			}
+		]
+	}
+}

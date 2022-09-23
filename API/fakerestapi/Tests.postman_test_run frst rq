@@ -1,0 +1,55 @@
+{
+	"id": "7ae14780-e4c2-4aaf-b5d4-c991211b82e1",
+	"name": "Tests",
+	"timestamp": "2022-09-16T04:46:20.725Z",
+	"collection_id": "18654010-464e3195-db99-41c7-9284-cc944fdaf4bf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6c469dd9-f699-47cf-8677-854041a92fd0",
+			"name": "getAuthors",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 583,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"response contain, id, idBook, firstName, lastName": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response contain, id, idBook, firstName, lastName": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				583
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"response contain, id, idBook, firstName, lastName": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 583,
+	"collection": {
+		"requests": [
+			{
+				"id": "6c469dd9-f699-47cf-8677-854041a92fd0",
+				"method": "GET"
+			}
+		]
+	}
+}

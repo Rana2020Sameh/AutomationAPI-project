@@ -1,0 +1,49 @@
+{
+	"id": "9fd83059-3029-4387-88c4-b18f496d4ba6",
+	"name": "Tests",
+	"timestamp": "2022-09-16T04:53:23.658Z",
+	"collection_id": "18654010-464e3195-db99-41c7-9284-cc944fdaf4bf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 1,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c67135d9-016a-4b54-a4b4-d63db736d721",
+			"name": "Delete Author",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/0",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 96,
+	"collection": {
+		"requests": [
+			{
+				"id": "c67135d9-016a-4b54-a4b4-d63db736d721",
+				"method": "DELETE"
+			}
+		]
+	}
+}

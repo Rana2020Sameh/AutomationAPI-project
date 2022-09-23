@@ -1,0 +1,139 @@
+{
+	"id": "2f2e33dc-2fc3-4187-afcc-861badaef97b",
+	"name": "Trello API Testing",
+	"timestamp": "2022-09-08T15:02:28.636Z",
+	"collection_id": "18654010-52491a6f-dae2-4f7b-b562-d3d6e88f3c01",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "be7ba1e9-2de2-470e-876a-8aeeaf1c27bd",
+			"name": "Authorization",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 318,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				318
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+			"name": "create board",
+			"url": "https://api.trello.com/1/boards/?name=frist%20Test&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 414,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"verify the most important parameters ": true
+			},
+			"testPassFailCounts": {
+				"verify the most important parameters ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				414
+			],
+			"allTests": [
+				{
+					"verify the most important parameters ": true
+				}
+			]
+		},
+		{
+			"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+			"name": "get open boards",
+			"url": "https://api.trello.com/1/members/me?boards=open&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 423,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"": true
+			},
+			"testPassFailCounts": {
+				"": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				423
+			],
+			"allTests": [
+				{
+					"": true
+				}
+			]
+		},
+		{
+			"id": "21b50273-dbcb-429a-b8ec-d01cb4371183",
+			"name": "Delete a Board",
+			"url": "https://api.trello.com/1/boards/6319fe672d42c0022952ba49?key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 649,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validate Respose body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate Respose body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				649
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validate Respose body": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1804,
+	"collection": {
+		"requests": [
+			{
+				"id": "be7ba1e9-2de2-470e-876a-8aeeaf1c27bd",
+				"method": "GET"
+			},
+			{
+				"id": "2e4775f9-d169-46e6-a5ad-119af392d3d7",
+				"method": "POST"
+			},
+			{
+				"id": "9b3882b0-976e-428f-a7a1-b193346c3cc6",
+				"method": "GET"
+			},
+			{
+				"id": "21b50273-dbcb-429a-b8ec-d01cb4371183",
+				"method": "DELETE"
+			}
+		]
+	}
+}

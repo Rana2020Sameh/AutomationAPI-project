@@ -1,0 +1,55 @@
+{
+	"id": "248bc184-8c3c-4204-8967-a56dabbb53ea",
+	"name": "Trello API Testing",
+	"timestamp": "2022-09-16T05:05:16.108Z",
+	"collection_id": "18654010-52491a6f-dae2-4f7b-b562-d3d6e88f3c01",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e04d7c24-7ebb-48b7-83a8-40567968d509",
+			"name": "create list",
+			"url": "https://api.trello.com/1/lists?name=frist%20Test&idBoard=5abbe4b7ddc1b351ef961414&key=f0f5bc17aadd094d4e6f3ad17a3520df&token=e4a44cc95a5f023bd6de5feaf290fb542ceb9585e9584c555b83c3eeabcbb3df",
+			"time": 345,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validate Response Keys": true,
+				"Verify the most important parameters and confirm their default values": true
+			},
+			"testPassFailCounts": {
+				"Validate Response Keys": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the most important parameters and confirm their default values": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				345
+			],
+			"allTests": [
+				{
+					"Validate Response Keys": true,
+					"Verify the most important parameters and confirm their default values": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 345,
+	"collection": {
+		"requests": [
+			{
+				"id": "e04d7c24-7ebb-48b7-83a8-40567968d509",
+				"method": "POST"
+			}
+		]
+	}
+}
